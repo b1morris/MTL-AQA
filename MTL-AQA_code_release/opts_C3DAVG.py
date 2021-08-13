@@ -25,9 +25,9 @@ dataset_frames_dir = '~/shared/data/AQA/Videos/whole_video_frames'
 sample_length = 103
 
 # input data dims; C3D-AVG:112; MSCADC: 180
-C, H, W = 3,180,180#3,112,112#
+C, H, W = 3,112,112
 # image resizing dims; C3D-AVG: 171,128; MSCADC: 640,360
-input_resize = 640,360#171,128#
+input_resize = 171,128
 # temporal augmentation range
 temporal_aug_min = -3; temporal_aug_max = 3
 
@@ -41,7 +41,7 @@ vocab_size = 5779
 
 caption_lstm_dim_hidden = 512
 caption_lstm_dim_word = 512
-caption_lstm_dim_vid = 1200#8192# C3D-AVG: 8192; MSCADC: 1200
+caption_lstm_dim_vid = 8192# C3D-AVG: 8192; MSCADC: 1200
 caption_lstm_cell_type = 'gru'
 caption_lstm_num_layers = 2
 caption_lstm_dropout = 0.5
@@ -56,7 +56,7 @@ max_epochs = 100
 train_batch_size = 3
 test_batch_size = 5
 
-model_ckpt_interval = 1 # in epochs
+model_ckpt_interval = 5 # in epochs
 
 base_learning_rate = 0.0001
 

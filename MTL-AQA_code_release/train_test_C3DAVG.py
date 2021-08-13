@@ -22,7 +22,7 @@ from models.C3DAVG.my_fc6 import my_fc6
 from models.C3DAVG.score_regressor import score_regressor
 from models.C3DAVG.dive_classifier import dive_classifier
 from models.C3DAVG.S2VTModel import S2VTModel
-from opts import *
+from opts_C3DAVG import *
 from utils import utils_1
 import numpy as np
 
@@ -289,3 +289,4 @@ if __name__ == '__main__':
         print('Using Captioning Loss')
 
     main()
+
