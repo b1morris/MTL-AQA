@@ -1,0 +1,12 @@
+name: mtl-aqa
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - pillow
+  - numpy
+  - scipy
+  - torchvision==0.2.1
+  - cuda100
+  - pytorch==1.0.0
+prefix: /home/morrisb4/miniconda3/envs/mtl-aqa

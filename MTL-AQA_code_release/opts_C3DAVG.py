@@ -13,13 +13,13 @@
 randomseed = 0
 
 # directory containing dataset annotation files; this anno_n_splits_dir make the full path
-dataset_dir = '../MTL-AQA_dataset_release/Ready_2_Use'
+dataset_dir = '../MTL-AQA_dataset_release/Ready_2_Use/'
 
-# directory tp store train/test split lists and annotations
+# directory to store train/test split lists and annotations
 anno_n_splits_dir = dataset_dir + 'MTL-AQA_split_0_data'
 
 # directory containing extracted frames
-dataset_frames_dir = '~/shared/data/AQA/Videos/whole_video_frames'
+dataset_frames_dir = '~/shared/data/AQA/Videos/whole_videos_frames'
 
 # sample length in terms of no of frames
 sample_length = 103
@@ -31,6 +31,10 @@ input_resize = 171,128
 # temporal augmentation range
 temporal_aug_min = -3; temporal_aug_max = 3
 
+# C3D base model (use full path)
+c3d_base = 'c3d.pickle'
+
+
 # score std
 final_score_std = 17
 
@@ -41,7 +45,7 @@ vocab_size = 5779
 
 caption_lstm_dim_hidden = 512
 caption_lstm_dim_word = 512
-caption_lstm_dim_vid = 8192# C3D-AVG: 8192; MSCADC: 1200
+caption_lstm_dim_vid = 8192 # C3D-AVG: 8192; MSCADC: 1200
 caption_lstm_cell_type = 'gru'
 caption_lstm_num_layers = 2
 caption_lstm_dropout = 0.5
